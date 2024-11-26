@@ -1,0 +1,718 @@
+
+/* Mobile  320px*/
+    .display5Large{
+        font-family: "Barlow", sans-serif;
+        font-size:36px;
+        line-height:43.2px;
+        font-weight:700;
+        color:var(--darkblue);    
+    }
+    #donate-header{
+        padding-bottom:16px;
+        margin-top:27px;
+        margin-left:auto;
+        margin-right:auto;
+        border-bottom:2px solid black;
+        position:relative;
+        width:fit-content;
+    }
+
+    .donateBodyContainer{
+        width:100%;
+        height:auto;
+        margin-top:0.7rem;
+        display:flex;
+        flex-wrap:wrap;
+        justify-content:center;
+        position:relative;
+        box-sizing:border-box;
+    }
+
+    .donateBody{
+        width:100%;
+        box-sizing:border-box;
+        height:auto;
+        text-wrap: wrap;
+        margin:0 12%;
+    }
+
+    #donate-body-header{
+        font-size:30px;
+        line-height:36px;
+        margin-top:20px;
+        margin-bottom:20px;
+        text-wrap:balance;
+        text-align:left;
+    }
+
+    #body-text, #body-text-2{
+        line-height:14.63px;
+        font-size:12px;
+        font-family: "Montserrat", sans-serif;
+        font-style:normal;
+        font-weight:400;
+        color:var(--darkpurple);
+        margin:0;
+    }
+
+
+    .pBolded{
+        font-weight:700;
+    }
+
+
+    .underline{
+        text-decoration:underline;
+    }
+
+    a{
+        text-decoration:none;
+        color:var(--darkpurple);
+    }
+
+    #body-text-2{
+        margin-top:23px;
+        margin-bottom:23px;
+    }
+
+    .donateForm{
+        width:292px;
+        min-height:291px;
+        position:relative;
+        margin: 33px auto 0px auto;
+        box-shadow:0px 10px 10px rgb(0,0,0,0.25);
+        height:100%;
+        box-sizing:border-box;
+    }
+
+    .formBody{
+        width:292px;
+        min-height:213px;
+        margin: 0 auto;
+        box-shadow:none;
+        justify-content:center;
+        box-sizing:border-box;
+        /* display flex fixes margin collapse */
+        display:flex;
+        flex-direction:column;
+    }
+
+    #donate-form-header{
+        font-size:30px;
+        width:100%;
+        text-align:center;
+        text-wrap:pretty;
+        line-height:normal;
+        margin-bottom:16.5px;
+        margin-top:0;
+        margin-left:0;
+        margin-right:0;
+    }
+
+    .buttonAmounts{
+        justify-content:center;
+        width:100%;
+        gap:7px;
+        min-height:67px;
+        margin:0;
+        display:flex;
+        flex-wrap:wrap;
+        position:relative;
+        width:fit-content;
+    }
+
+    .inputButtons{
+        font-family:"Montserrat",sans-serif;
+        background-color:var(--cantelope);
+        color:var(--darkblue);
+        width:79.49px;
+        height:30px;
+        border:none;
+        border-radius:4px;
+        padding: 9px 24px 9px 24px;
+        font-weight:500;
+        font-size:11px;
+        line-height:normal;
+        text-align:center;
+    }
+
+
+    .formFooter{
+        min-height:78px;
+        width:100%;
+        background-color: var(--lightnavy);
+        box-sizing:border-box;
+        box-shadow:0px 10px 10px rgb(0,0,0,0.25);    
+        overflow:auto;
+    }
+
+    #footer-header{
+        font-size:11px;
+        line-height:normal;
+        text-align:center;
+        margin:10px;
+        font-family: "Montserrat", sans-serif;
+        font-weight:600;
+        color:rgba(251,251,251,0.8);
+    }
+
+    .footerButtonContainer{
+        display:flex;
+        gap:17.51px;
+        align-items:center;
+        justify-content: center;
+    }
+
+    .footerButtons{
+        border-radius:4px;
+        padding: 9px 22px;
+        font-size:11px;
+        line-height:normal;
+        width:79px;
+        height:30px;
+        background-color: var(--magneta);
+        border:none;
+        color:rgba(251,251,251,0.8);
+        font-weight:500;
+    }
+
+    
+    .modalCheckWrapper{ 
+        width:100%;
+        max-width:280px;
+        min-height:331px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color:var(--white);
+        display:flex;
+        flex-direction:column;
+        z-index:2;
+    }
+
+    .modalDAFWrapper{ 
+        width:100%;
+        max-width:280px;
+        min-height:331px;
+        position:absolute;
+        top:50%;
+        left:50%;
+        transform: translate(-50%,-50%);
+        background-color:var(--white);
+        display:flex;
+        flex-direction:column;
+        z-index:2;
+    }
+
+    .btn-close1{
+        top:14px;
+        right:6px;
+        position:absolute;
+        align-self:flex-end;
+        font-size:30px;
+        width:30px;
+        height:30px;
+        border:none;
+        background:none;
+        padding:0;
+    }
+
+    .btn-close2{
+        top:14px;
+        right:6px;
+        position:absolute;
+        align-self:flex-end;
+        font-size:30px;
+        width:30px;
+        height:30px;
+        border:none;
+        background:none;
+        padding:0;
+    }
+
+    .material-symbols-outlined{
+        font-size:30px;
+    }
+
+    .modalCheckContainer{
+        margin:14px auto 0 auto;
+        width:100%;
+        max-width:244px;
+    }
+
+    #modalCheckHeader{
+        text-align:center;
+        font-family: "Montserrat", sans-serif;
+        font-weight:700;
+        font-size: 28px;
+    }
+
+    .modalCheckBody{
+        background-color: var(--lavender);
+        padding:7px;
+    }
+
+    .modalCheckBodyStyle{
+        font-family: "Montserrat", sans-serif;
+        font-weight:400;
+        text-align:center;
+        line-height:25px;
+        margin:0;
+    }
+
+    .modalDAFBodyStyle{
+        font-family: "Montserrat", sans-serif;
+        font-weight:400;
+        font-size:12px;
+        line-height:25px;
+        margin:0;
+        text-wrap:pretty;
+    }
+
+    .bold{
+        font-weight:700;
+    }
+
+    #modalText{
+        font-size:16px;
+        margin:24px 0 24px 0;
+        line-height:normal;
+        text-align:center;
+    }
+    .overlay1 {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+      }
+
+    .overlay2 {
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(0, 0, 0, 0.2);
+        z-index: 1;
+    }
+    .hidden1{
+        display: none;
+    }
+
+
+    .hidden2{
+        display: none;
+    }
+
+    @media only screen and (min-width:992px){
+        .display5Large{
+            font-size:60px;
+        }
+
+        #donate-header{
+            padding-bottom:20px;
+            margin-top:83px;
+            line-height:normal;
+        }
+    
+        .donateBodyContainer{
+            width:100%;
+            margin-top:114px;
+        }
+    
+        .donateBody{
+            margin:0 4%;
+        }
+    
+        #donate-body-header{
+            font-size:60px;
+            line-height:normal;
+            margin:0;
+            text-wrap:nowrap;
+            margin-bottom:20px;
+        }
+    
+        #body-text, #body-text-2{
+            line-height:normal;
+            font-size:24px;
+        }
+
+        #body-text-2{
+            margin-top:49px;
+            margin-bottom:66px;
+        }
+    
+        .donateForm{
+            width:895px;
+            min-height:500px;
+            margin: 138px auto 0px auto;
+        }
+    
+        .formBody{
+            width:895px;
+            /* display flex fixes margin collapse */
+            display:flex;
+            flex-direction:column;
+            margin-bottom:46px;
+        }
+    
+        #donate-form-header{
+            font-size:48px;
+            width:100%;
+            text-align:center;
+            margin-bottom:38px;
+            margin-top:38px;
+        }
+    
+        .buttonAmounts{
+            gap:17px;
+            min-height:67px;
+            margin:0 13%;
+        }
+    
+        .inputButtons{
+            width:181px;
+            height: 69px;
+            border-radius:10px;
+            padding: 20.858px 55.938px 20.858px 55.938px;
+            font-size:25px;
+        }
+    
+    
+        .formFooter{
+            min-height:170px;
+            width:100%;
+            background-color: var(--lightnavy);
+            box-sizing:border-box;
+            box-shadow:0px 10px 10px rgb(0,0,0,0.25);    
+            overflow:auto;
+        }
+    
+        #footer-header{
+            font-size:25px;
+            margin:25px;
+        }
+    
+        .footerButtonContainer{
+            gap:22.22px;
+        }
+    
+        .footerButtons{
+            border-radius:10px;
+            padding: 21px 56px;
+            font-size:25px;
+            line-height:normal;
+            width:243px;
+            height:70px;
+        }
+    
+        .modalCheckWrapper{ 
+            width:100%;
+            max-width:496px;
+            min-height:286px;
+        }
+    
+    
+        .modalDAFWrapper{ 
+            width:100%;
+            max-width:496px;
+            min-height:286px;
+        }
+    
+        .btn-close1{
+            right:7px;
+        }
+    
+        .btn-close2{
+            right:7px;
+        }
+        
+        .modalCheckContainer{
+            margin:28px auto 0 auto;
+            width:100%;
+            max-width:422px;
+        }
+    
+        .modalCheckBody{
+            background-color: var(--lavender);
+            padding:12px 14px;
+        }
+    
+        .modalDAFBodyStyle{
+            font-family: "Montserrat", sans-serif;
+            font-weight:400;
+            font-size:14px;
+            line-height:25px;
+            margin:0;
+            text-wrap:pretty;
+        }
+    
+        #modalText{
+            margin:24px 0 24px 0;
+            font-size:16px;
+            line-height:19.5px;
+            text-align:center;
+        }
+    
+        .overlay1 {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+          }
+    
+        .overlay2 {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+        }
+        .hidden1{
+            display: none;
+        }
+    
+    
+        .hidden2{
+            display: none;
+        }
+    
+    }
+
+    @media only screen and (min-width:1400px){
+        .display5Large{
+            font-size:72px;
+        }
+
+        #donate-header{
+            padding-bottom:20px;
+            margin-top:119px;
+            line-height:normal;
+        }
+    
+        .donateBodyContainer{
+            width:100%;
+            margin-top:114px;
+            flex-wrap:nowrap;
+            gap:4%;
+            padding:0 5%;
+        }
+    
+        .donateBody{
+            width:100%;
+            margin:0;
+            flex-shrink:2;
+        }
+    
+        #donate-body-header{
+            font-size:60px;
+            line-height:normal;
+            margin:0;
+            text-wrap:wrap;
+            margin-bottom:20px;
+        }
+    
+        #body-text, #body-text-2{
+            line-height:normal;
+            font-size:24px;
+        }
+
+        #body-text-2{
+            margin-top:49px;
+            margin-bottom:66px;
+        }
+    
+        .donateForm{
+            max-width:705px;
+            min-height:526px;
+            margin:0;
+        }
+    
+        .formBody{
+            width:705px;
+            /* display flex fixes margin collapse */
+            display:flex;
+            flex-direction:column;
+            margin-bottom:46px;
+        }
+    
+        #donate-form-header{
+            font-size:55px;
+            line-height:66px;
+            width:100%;
+            text-align:center;
+            margin-bottom:38px;
+            margin-top:38px;
+        }
+    
+        .buttonAmounts{
+            gap:17.5px;
+            min-height:164px;
+            margin:0;
+        }
+    
+        .inputButtons{
+            width:191px;
+            height: 73px;
+            border-radius:10px;
+            padding: 22px 59px 22px 59px;
+            font-size:24px;
+        }
+    
+    
+        .formFooter{
+            min-height:183px;
+        }
+    
+        #footer-header{
+            font-size:29px;
+            margin:25px;
+        }
+    
+        .footerButtonContainer{
+            gap:17.51px;
+        }
+    
+        .footerButtons{
+            border-radius:10px;
+            padding: 22px 59px;
+            font-size:24px;
+            line-height:normal;
+            width:191px;
+            height:73px;
+        }
+    
+        .modalCheckWrapper{ 
+            width:100%;
+            max-width:1067px;
+            min-height:285px;
+           
+        }
+    
+        .modalDAFWrapper{
+            width:100%;
+            max-width:1067px;
+            min-height:285px;
+        }
+    
+        .btn-close1{
+            position:absolute;
+            align-self:flex-end;
+            font-size:30px;
+            top:25px;
+            right:21px;
+            width:30px;
+            height:30px;
+            border:none;
+            background:none;
+            padding:0;
+        }
+    
+        .btn-close2{
+            position:absolute;
+            align-self:flex-end;
+            font-size:30px;
+            top:25px;
+            right:21px;
+            width:30px;
+            height:30px;
+            border:none;
+            background:none;
+            padding:0;
+        }
+        .material-symbols-outlined{
+            font-size:30px;
+        }
+    
+        .modalCheckContainer{
+            margin:38px auto 0 auto;
+            width:100%;
+            max-width:965px;
+        }
+        
+        #modalCheckHeader{
+            text-align:center;
+            font-family: "Montserrat", sans-serif;
+            font-weight:700;
+            font-size: 28px;
+        }
+    
+        .modalCheckBody{
+            background-color: var(--lavender);
+            padding:16px;
+        }
+    
+        .modalCheckBodyStyle{
+            font-family: "Montserrat", sans-serif;
+            font-weight:400;
+            text-align:center;
+            line-height:25px;
+            margin:0;
+        }
+    
+        .modalDAFBodyStyle{
+            font-family: "Montserrat", sans-serif;
+            font-weight:400;
+            font-size:16px;
+            line-height:25px;
+            margin:0;
+            text-wrap:pretty;
+        }
+    
+        .bold{
+            font-weight:700;
+        }
+        #modalText{
+            margin:24px;
+            line-height:19.5px;
+        }
+    
+        .overlay1 {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+          }
+    
+          .overlay2 {
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.2);
+            z-index: 1;
+          }
+          .hidden1{
+            display: none;
+          }
+    
+    
+          .hidden2{
+            display: none;
+          }
+    }
