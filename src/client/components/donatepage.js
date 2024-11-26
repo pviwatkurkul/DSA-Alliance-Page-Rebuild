@@ -1,5 +1,5 @@
 function buttonScript(){
-    var stripe = Stripe('pk_live_51OeQicFxSJt90dKD1EpiJxj0q8bskqFsV6PHLjm4HcIZnbxPwBA1uFmB3sW5o1AuI7KawlLEukdCS59f00gIcHJo00HOv97w5n');
+    var stripe = Stripe('');
     const donateButtons = [
     {selector: "#donate-button-10", priceID: "price_1OosPVFxSJt90dKDHltqa9lA"}, 
     {selector: "#donate-button-25", priceID: "price_1OouiiFxSJt90dKDqE1NiASu"},
@@ -14,7 +14,7 @@ function buttonScript(){
         button.addEventListener('click', function() {
         if (custom) {
         // If it's a custom amount, redirect to the custom donation page
-            window.location.href = "https://donate.stripe.com/cN28xre4s63Jcwg7sy";
+            window.location.href = "";
         // test link
         // window.location.href = "https://buy.stripe.com/test_8wMdSG9S30vQ8dW4gp";
         } else {
@@ -22,8 +22,8 @@ function buttonScript(){
             stripe.redirectToCheckout({
             lineItems: [{price: priceID, quantity: 1}],
             mode: 'payment',
-            successUrl: 'https://www.datasciencealliance.org/donation---thank-you-page',
-            cancelUrl: 'https://www.datasciencealliance.org/donate',
+            successUrl: '',
+            cancelUrl: '',
             })
             .then(function (result) {
                 if (result.error) {

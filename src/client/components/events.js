@@ -4,14 +4,14 @@ const upcomingEventsData = [
         header:"Responsible Data Science Bingo Night",
         date:"Wednesday, November 20, from  4:30 pm - 7:30pm",
         location:"DSA Headquarters (2675 Rosecrans St.)",
-        link:"https://lu.ma/afxfddfu",
+        link:"",
     },
     {   
         image: "https://cdn.prod.website-files.com/6347409ef6f0d93ccbc4b0f7/67058d5e8ab17101cc4186d4_WinterEvent-1080W-p-800.png",
         header:"A Holiday with DSA",
         date:"Thursday, December 5, from  4:30 pm - 7:30pm",
         location:"DSA Headquarters (2675 Rosecrans St.)",
-        link:"https://lu.ma/l8o76mjy",
+        link:"",
     }
 ];
 
